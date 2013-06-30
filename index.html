@@ -8,6 +8,15 @@
 
       h1, h2, h3 {
         text-align: center;
+        font-family: sans-serif;
+        color: #999;
+      }
+
+      .chart {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 1024px;
       }
     </style>
     <script src="raphael-min.js"></script>
@@ -18,16 +27,16 @@
   <body>
     <div>
       <h1>The Voice UK: Season 2</h2>
-      <h2>Number of YouTube views for each of the four finalist's performances</h2>
+      <h2>Number of YouTube views for each performance of the four finalists.</h2>
     </div>
 
     <div ng-controller="VoiceCtrl">
-      <div chart></div>
+      <div class="chart" chart></div>
     </div>
 
     <div>
       <p>Photos from <a href="http://www.bbc.co.uk/programmes/p012j33g/profiles/teams">the BBC</a></p>
-      <p>By <a href="zonetora.co.uk">Tristan Allwood</a></p>
+    <p>By <a href="http://zonetora.co.uk">Tristan Allwood</a>, as an experiment in <a href="http://raphaeljs.com/">RaphaelJS</a> and <a href="http://angularjs.org/">AngularJS</a></p>
     </div>
 
   </body>
